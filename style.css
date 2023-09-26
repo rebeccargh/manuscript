@@ -32,14 +32,39 @@ ul {
 ul li::before{
 	content: "\1405 \020"
 }
+}
+footer {
+	text-align: right;
+	font-size: 20px;
+}
+/* cannot move footer to right side? */
+a:link {
+	text-decoration: underline;
+	color: #e65527;
+}
+a:active {
+	text-decoration: underline;
+	color: #e65527;
+}
+a:visited {
+	text-decoration: underline;
+	color: #e65527;
+}
+a:hover {
+	text-decoration: underline;
+	color: #f3c25f;
+}
 .author {
-	font-size: 36px;
-	/* text-align: right; */
-}
-strong {
+	font-size: 24px;
 	font-weight: 700;
+	/* text-align: right; - can i move this on to the same line as the title?*/
 }
-em {
-	font-style: italic;
+.pullquote {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.6;
+	max-width: 60%;
+	padding-left: 4em;
+	padding-right: 4em;
 }
 /* how to format last line of article text similarly to in original? alignment? */

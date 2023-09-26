@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* needs box constraints for paragraph width */
+/* stylistic halftones for heading decor? char#2591, 2592 */
 body {
-	color: tomato;
+	color: black;
+	font-family: 'Tinos';
+	line-height: 1.8;
 }
+h1 {
+	font-weight: 700;
+	font-size: 96px;
+	/* change leading */
+}
+h2 {
+	font-weight: 700;
+	font-size: 48px;
+}
+/* between p margins need increasing */
+p {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1.6;
+}
+ul {
+	font-weight: 400;
+	font-size: 24px;
+	list-style-type: none;
+	list-style-position: inside;
+}
+ul li::before{
+	content: "\1405 \020"
+}
+.author {
+	font-size: 36px;
+	/* text-align: right; */
+}
+strong {
+	font-weight: 700;
+}
+em {
+	font-style: italic;
+}
+/* how to format last line of article text similarly to in original? alignment? */

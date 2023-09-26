@@ -1,37 +1,49 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-/* needs box constraints for paragraph width */
 /* stylistic halftones for heading decor? char#2591, 2592 */
 body {
 	color: black;
 	font-family: 'Gelasio', serif;
 	line-height: 1.8;
+	font-size: 20px;
+	margin-left: 7.5em;
 }
 h1 {
 	font-weight: 700;
 	font-size: 96px;
-	/* change leading */
+	line-height: 2;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 h2 {
 	font-weight: 700;
 	font-size: 48px;
+	line-height: 2;
 }
-/* between p margins need increasing */
 p {
 	font-weight: 400;
-	font-size: 24px;
 	line-height: 1.6;
+	max-width: 65ch;
+	padding-bottom: 1em;
+}
+strong {
+	font-weight: 700;
+}
+em {
+	font-style: italic;
 }
 ul {
 	font-weight: 400;
-	font-size: 24px;
 	list-style-type: none;
 	list-style-position: inside;
+	margin-left: 2em;
 }
 ul li::before{
 	content: "\1405 \020"
 }
+ul + p {
+	padding-top: 1em;
 }
 footer {
 	text-align: right;

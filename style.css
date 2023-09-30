@@ -85,16 +85,14 @@ a:hover {
 	padding-right: 6em;
 	max-width: 75vw;
 }
-/* .lastline1 {
-
-} */
+.lastline1 {
+	margin-left: 5em;
+}
 .lastline2 {
-	display: block;
-	margin-left: 10em;
+	margin-left: 15em;
 }
 .lastline3 {
-	display: block;
-	margin-left: 20em;
+	margin-left: 23em;
 }
 /* how to format last line of article text similarly to in original? alignment? 
 replace percentage since relative to nearest ancestor*/

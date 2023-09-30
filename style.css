@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+/* border top/bottom for title? miimic newspaper?*/
 body {
 	color: black;
 	font-family: 'Gelasio', serif;
 	line-height: 1.8;
 	font-size: 20px;
 	margin-left: 7.5em;
+	font-weight:400;
 }
 h1 {
 	font-weight: 700;
-	font-size: 96px;
+	font-size: 112px;
 	line-height: 2;
 	padding-top: 0.5em;
-	padding-bottom: 0.5em; 
+	padding-bottom: 0.5em;
 }
 h2 {
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 64px;
 	line-height: 2;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
 }
-p {
-	font-weight: 400;
+p:not(.toplink,.author) {
 	line-height: 1.6;
-	max-width: 65ch;
-	padding-bottom: 1em;
+	max-width: 60ch;
+	padding-bottom: 1.5em;
 }
 strong {
 	font-weight: 700;
@@ -46,35 +49,52 @@ ul + p {
 footer {
 	text-align: right;
 	font-size: 20px;
+	margin-bottom: 1em;
+	margin-right: 1em;
 }
-/* cannot move footer to right side? */
-a:link {
+a {
 	text-decoration: underline;
-	color: #e65527;
+	color: white;
+	background-color: #e65527;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+a:link {
+	background-color: #e65527;
 }
 a:active {
-	text-decoration: underline;
-	color: #e65527;
+	background-color: #e65527;
 }
 a:visited {
-	text-decoration: underline;
-	color: #e65527;
+	background-color: #e65527;
 }
 a:hover {
-	text-decoration: underline;
-	color: #f3c25f;
+	background-color: #f3c25f;
 }
 .author {
-	font-size: 24px;
-	font-weight: 700;
-	/* text-align: right; - can i move this on to the same line as the title?*/
-}
-.pullquote {
 	font-size: 32px;
 	font-weight: 700;
-	line-height: 1.6;
-	max-width: 60%;
-	padding-left: 4em;
-	padding-right: 4em;
+	padding-bottom: 1em;
 }
-/* how to format last line of article text similarly to in original? alignment? */
+.pullquote {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.6;
+	padding-left: 15em;
+	padding-right: 6em;
+	max-width: 75vw;
+}
+/* .lastline1 {
+
+} */
+.lastline2 {
+	display: block;
+	margin-left: 10em;
+}
+.lastline3 {
+	display: block;
+	margin-left: 20em;
+}
+/* how to format last line of article text similarly to in original? alignment? 
+replace percentage since relative to nearest ancestor*/
